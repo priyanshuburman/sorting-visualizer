@@ -78,8 +78,8 @@ export default class Sortingvisualizer extends React.Component {
             for(let i=0;i<length;i++){
                 array.push(randomIntFromInterval(-1000, 1000));
             }
-            const javaScriptSortedArray = array.slice().sort((a,b)=> a-b);
-            const mergeSortedArray=getMergeSortAnimations.mergeSort(array.slice());
+            // const javaScriptSortedArray = array.slice().sort((a,b)=> a-b);
+            // const mergeSortedArray=getMergeSortAnimations.mergeSort(array.slice());
             
         }
     }
@@ -114,12 +114,12 @@ function randomIntFromInterval(min, max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-function arraysAreEqual(arrayOne, arrayTwo) {
-    if (arrayOne.length !== arrayTwo.length) return false;
-    for (let i = 0; i < arrayOne.length; i++) {
-      if (arrayOne[i] !== arrayTwo[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
+// function arraysAreEqual(arrayOne, arrayTwo) {
+//     if (arrayOne.length !== arrayTwo.length) return false;
+//     for (let i = 0; i < arrayOne.length; i++) {
+//       if (arrayOne[i] !== arrayTwo[i]) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
